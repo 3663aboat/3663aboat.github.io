@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>个人网站｜作品集</title>
+    <meta name="description" content="作品集：项目、案例与链接。" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">跳到主要内容</a>
+
+    <header class="topbar" data-topbar>
+      <div class="container nav-inner">
+        <a class="brand" href="./index.html" aria-label="返回首页">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-title">
+            你的名字
+            <span class="brand-sub">Personal Site</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" data-nav-toggle>
+          <span class="burger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          菜单
+        </button>
+
+        <nav class="nav-links" aria-label="站点导航" data-nav-links>
+          <a href="./index.html">首页</a>
+          <a href="./about.html">关于我</a>
+          <a href="./portfolio.html" aria-current="page">作品集</a>
+          <a href="./contact.html">联系方式</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <div class="container">
+        <section class="hero">
+          <div class="kicker">Portfolio</div>
+          <h1 class="title">作品集</h1>
+          <p class="lead">
+            这里放你的项目与案例。每个卡片建议包含：一句话简介、你负责的部分、亮点指标、以及线上链接 / 代码仓库链接。
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="./contact.html">有项目想合作？</a>
+            <a class="btn" href="./about.html">先了解我</a>
+          </div>
+        </section>
+
+        <section class="grid" aria-label="作品列表">
+          <article class="card">
+            <h2>项目 A（占位）</h2>
+            <p>
+              占位内容：用一句话说明这是做什么的。补充你负责的核心工作（例如：架构设计、关键功能、性能优化、上线交付）。
+            </p>
+            <div class="badge-row">
+              <span class="badge">Web App</span>
+              <span class="badge">React</span>
+              <span class="badge">API</span>
+            </div>
+            <div class="divider"></div>
+            <div class="cta-row">
+              <a class="btn" href="#" aria-disabled="true">在线演示（待补）</a>
+              <a class="btn" href="#" aria-disabled="true">源码（待补）</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h2>项目 B（占位）</h2>
+            <p>
+              占位内容：可以写亮点，例如“首屏加载降低 35%”“组件复用率提升”“交付周期缩短”等，用数字更有说服力。
+            </p>
+            <div class="badge-row">
+              <span class="badge">Design System</span>
+              <span class="badge">TypeScript</span>
+              <span class="badge">Performance</span>
+            </div>
+            <div class="divider"></div>
+            <div class="cta-row">
+              <a class="btn" href="#" aria-disabled="true">案例（待补）</a>
+              <a class="btn" href="#" aria-disabled="true">文档（待补）</a>
+            </div>
+          </article>
+        </section>
+
+        <section class="grid" aria-label="更多信息" style="margin-top: 18px;">
+          <article class="card">
+            <h2>我擅长的项目类型</h2>
+            <ul>
+              <li>面向用户的产品网站 / Landing Page</li>
+              <li>后台管理系统 / 数据看板</li>
+              <li>组件库 / 工程化与性能优化</li>
+            </ul>
+          </article>
+
+          <aside class="card">
+            <h2>下一步</h2>
+            <p>如果你想把这里变成更完整的作品展示页，可以加：截图、视频、时间线、技术方案摘要。</p>
+            <p><a class="btn primary" href="./contact.html">发我一条消息</a></p>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> 你的名字</div>
+        <div class="footer-links">
+          <a href="./index.html">首页</a>
+          <a href="./about.html">关于</a>
+          <a href="./contact.html">联系</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>

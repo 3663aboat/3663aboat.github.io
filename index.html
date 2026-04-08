@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>个人网站｜首页</title>
+    <meta name="description" content="简洁科技感个人网站：首页、关于我、作品集、联系方式。" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">跳到主要内容</a>
+
+    <header class="topbar" data-topbar>
+      <div class="container nav-inner">
+        <a class="brand" href="./index.html" aria-label="返回首页">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-title">
+            你的名字
+            <span class="brand-sub">Personal Site</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" data-nav-toggle>
+          <span class="burger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          菜单
+        </button>
+
+        <nav class="nav-links" aria-label="站点导航" data-nav-links>
+          <a href="./index.html" aria-current="page">首页</a>
+          <a href="./about.html">关于我</a>
+          <a href="./portfolio.html">作品集</a>
+          <a href="./contact.html">联系方式</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <div class="container">
+        <section class="hero">
+          <div class="kicker">Welcome</div>
+          <h1 class="title">你好，我是 你的名字</h1>
+          <p class="lead">
+            这里是一个简洁、偏深色的个人网站模板。你可以在这里展示个人简介、项目作品、以及对外联系方式，适合直接部署到线上。
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="./portfolio.html">查看作品集</a>
+            <a class="btn" href="./contact.html">联系我</a>
+          </div>
+        </section>
+
+        <section class="grid" aria-label="首页内容">
+          <article class="card">
+            <h2>我在做什么</h2>
+            <p>
+              这是占位内容：用 2-3 句话概括你的方向，比如前端 / 全栈 / 数据 / 设计，强调你最擅长解决的问题与擅长的技术栈。
+            </p>
+            <div class="divider"></div>
+            <h2>近期亮点</h2>
+            <ul>
+              <li>亮点 1：做了一个项目 / 写了一篇文章 / 参与了开源</li>
+              <li>亮点 2：优化了性能 / 改善了体验 / 交付了关键功能</li>
+              <li>亮点 3：学习了某项新技术并用于实践</li>
+            </ul>
+          </article>
+
+          <aside class="card">
+            <h2>关键词</h2>
+            <p>这部分是占位内容：用几个关键词快速建立你的个人画像。</p>
+            <div class="badge-row" aria-label="技能标签">
+              <span class="badge">TypeScript</span>
+              <span class="badge">React</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">UI/UX</span>
+              <span class="badge">Performance</span>
+              <span class="badge">AI</span>
+            </div>
+            <div class="divider"></div>
+            <h2>快速导航</h2>
+            <p>
+              <a class="btn" href="./about.html">了解更多</a>
+            </p>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> 你的名字</div>
+        <div class="footer-links">
+          <a href="./about.html">关于</a>
+          <a href="./portfolio.html">作品</a>
+          <a href="./contact.html">联系</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>

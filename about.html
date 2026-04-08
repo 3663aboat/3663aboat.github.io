@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>个人网站｜关于我</title>
+    <meta name="description" content="关于我：个人简介、技能与经历。" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">跳到主要内容</a>
+
+    <header class="topbar" data-topbar>
+      <div class="container nav-inner">
+        <a class="brand" href="./index.html" aria-label="返回首页">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-title">
+            你的名字
+            <span class="brand-sub">Personal Site</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" data-nav-toggle>
+          <span class="burger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          菜单
+        </button>
+
+        <nav class="nav-links" aria-label="站点导航" data-nav-links>
+          <a href="./index.html">首页</a>
+          <a href="./about.html" aria-current="page">关于我</a>
+          <a href="./portfolio.html">作品集</a>
+          <a href="./contact.html">联系方式</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <div class="container">
+        <section class="hero">
+          <div class="kicker">About</div>
+          <h1 class="title">关于我</h1>
+          <p class="lead">
+            这是占位内容：用一段简短介绍说明你是谁、你在做什么、你擅长什么，以及你希望与谁合作或创造什么价值。
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="./contact.html">合作 / 交流</a>
+            <a class="btn" href="./portfolio.html">看我的作品</a>
+          </div>
+        </section>
+
+        <section class="grid" aria-label="关于我内容">
+          <article class="card">
+            <h2>个人简介</h2>
+            <p>
+              占位内容：可以写你的经历（例如：X 年经验 / 某领域深耕 / 热爱某类产品）、工作方式（重视可维护性、用户体验、性能）以及你目前关注的方向。
+            </p>
+            <div class="divider"></div>
+            <h2>经历（示例）</h2>
+            <ul>
+              <li>2025 - 现在：某公司 / 某团队 —— 负责某业务模块、推进某项技术改造</li>
+              <li>2023 - 2025：某项目 / 开源贡献 —— 构建组件库、优化工程化与发布流程</li>
+              <li>2021 - 2023：学习与实践 —— 打磨基础能力与作品集</li>
+            </ul>
+          </article>
+
+          <aside class="card">
+            <h2>技能栈</h2>
+            <p>占位内容：把你常用的技术和工具列出来。</p>
+            <div class="badge-row">
+              <span class="badge">HTML/CSS</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">TypeScript</span>
+              <span class="badge">React</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">Git</span>
+            </div>
+            <div class="divider"></div>
+            <h2>偏好与原则</h2>
+            <ul>
+              <li>清晰的结构与一致的风格</li>
+              <li>可访问性与响应式体验</li>
+              <li>性能与可维护性</li>
+            </ul>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> 你的名字</div>
+        <div class="footer-links">
+          <a href="./index.html">首页</a>
+          <a href="./portfolio.html">作品</a>
+          <a href="./contact.html">联系</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>

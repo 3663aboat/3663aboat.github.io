@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>个人网站｜联系方式</title>
+    <meta name="description" content="联系方式：邮箱、社交账号与留言方式。" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">跳到主要内容</a>
+
+    <header class="topbar" data-topbar>
+      <div class="container nav-inner">
+        <a class="brand" href="./index.html" aria-label="返回首页">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-title">
+            你的名字
+            <span class="brand-sub">Personal Site</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" data-nav-toggle>
+          <span class="burger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          菜单
+        </button>
+
+        <nav class="nav-links" aria-label="站点导航" data-nav-links>
+          <a href="./index.html">首页</a>
+          <a href="./about.html">关于我</a>
+          <a href="./portfolio.html">作品集</a>
+          <a href="./contact.html" aria-current="page">联系方式</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <div class="container">
+        <section class="hero">
+          <div class="kicker">Contact</div>
+          <h1 class="title">联系方式</h1>
+          <p class="lead">
+            这是占位内容：你可以放邮箱、社交账号与合作方向。为了方便部署，这里不接后端，仅提供可点击的联系方式。
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="mailto:you@example.com">发邮件</a>
+            <a class="btn" href="./portfolio.html">先看作品</a>
+          </div>
+        </section>
+
+        <section class="grid" aria-label="联系信息">
+          <article class="card">
+            <h2>联系渠道（占位）</h2>
+            <ul>
+              <li>邮箱：<a href="mailto:you@example.com">you@example.com</a></li>
+              <li>GitHub：<a href="#" aria-disabled="true">你的 GitHub（待补）</a></li>
+              <li>LinkedIn / 公众号 / 小红书：<a href="#" aria-disabled="true">账号链接（待补）</a></li>
+            </ul>
+            <div class="divider"></div>
+            <h2>合作方向（占位）</h2>
+            <ul>
+              <li>个人网站 / 产品站点 / 活动页</li>
+              <li>前端工程化、性能优化、组件库建设</li>
+              <li>原型到上线的全流程协作</li>
+            </ul>
+          </article>
+
+          <aside class="card">
+            <h2>消息模板（复制使用）</h2>
+            <p>为了高效沟通，你可以按下面格式发我一封邮件：</p>
+            <ul>
+              <li>你是谁 & 你在做什么</li>
+              <li>项目目标 & 时间节点</li>
+              <li>现有资料：文档 / 原型 / 链接</li>
+              <li>期望合作方式：咨询 / 外包 / 长期</li>
+            </ul>
+            <div class="divider"></div>
+            <p><a class="btn primary" href="mailto:you@example.com?subject=%E5%90%88%E4%BD%9C%EF%BC%9A%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99&body=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%98%AF...%0A%0A%E9%A1%B9%E7%9B%AE%E7%9B%AE%E6%A0%87%EF%BC%9A%0A%E6%97%B6%E9%97%B4%E8%8A%82%E7%82%B9%EF%BC%9A%0A%E8%B5%84%E6%96%99%E9%93%BE%E6%8E%A5%EF%BC%9A%0A%E5%90%88%E4%BD%9C%E6%96%B9%E5%BC%8F%EF%BC%9A">一键写邮件</a></p>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> 你的名字</div>
+        <div class="footer-links">
+          <a href="./index.html">首页</a>
+          <a href="./about.html">关于</a>
+          <a href="./portfolio.html">作品</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
